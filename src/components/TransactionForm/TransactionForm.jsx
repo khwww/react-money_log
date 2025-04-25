@@ -25,7 +25,6 @@ const TransactionForm = ({ onAdd }) => {
 
     onAdd(newTransaction);
 
-    // 초기화
     setDescription("");
     setAmount("");
     setType("income");
@@ -36,6 +35,14 @@ const TransactionForm = ({ onAdd }) => {
       <h2 className={css.sectionTitle}>새로운 거래 추가</h2>
 
       <form onSubmit={handleSubmit} className={css.form}>
+        <input
+          type="text"
+          placeholder="내용 입력..."
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          className={css.input}
+        />
+
         <div className={css.radioGroup}>
           <label
             className={`${css.radioLabel} ${
@@ -71,14 +78,6 @@ const TransactionForm = ({ onAdd }) => {
             <span className={css.radioText}>지출</span>
           </label>
         </div>
-
-        <input
-          type="text"
-          placeholder="내용 입력..."
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          className={css.input}
-        />
 
         <input
           type="number"

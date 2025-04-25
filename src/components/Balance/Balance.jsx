@@ -22,12 +22,12 @@ const Balance = ({ transactions }) => {
 
       <div className={css.summaryCard}>
         <div className={css.summaryItem}>
-          <h3>수입</h3>
+          <h2 className={css.sectionTitle}>수입</h2>
           <p className={css.incomeAmount}>₩{income.toLocaleString()}</p>
         </div>
         <div className={css.divider}></div>
         <div className={css.summaryItem}>
-          <h3>지출</h3>
+          <h2 className={css.sectionTitle}>지출</h2>
           <p className={css.expenseAmount}>₩{expense.toLocaleString()}</p>
         </div>
       </div>

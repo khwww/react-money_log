@@ -20,11 +20,11 @@
   width: 100%;
 }
 
-.balanceInfo h2 {
-  font-size: 18px;
+h2 {
+  font-size: 22px;
   margin: 0 0 10px 0;
   font-weight: normal;
-  color: #000;
+  color: black;
 }
 
 .balanceAmount {
@@ -61,14 +61,14 @@
 
 .incomeAmount {
   color: #4caf50;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
 
 .expenseAmount {
   color: #f44336;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   margin: 0;
 }

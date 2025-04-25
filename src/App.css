@@ -1,11 +1,11 @@
 .app-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: white;
+  /* background-color: white; */
   min-height: 100vh;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
 }
 
 .app-title {
@@ -31,4 +31,25 @@ select {
     font-size: 22px;
     margin: 15px 0 25px;
   }
+  .form-and-list-con {
+    width: 100%;
+    flex-direction: column;
+  }
+  .form-and-list-con > * {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    /* box-sizing: border-box; */
+  }
+}
+
+.form-and-list-con {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.form-and-list-con > * {
+  flex: 1;
+  min-width: 0;
 }

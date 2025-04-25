@@ -48,11 +48,13 @@ const App = () => {
     <div className="app-container">
       <h1 className="app-title">용돈기입장</h1>
       <Balance transactions={transactions} />
-      <TransactionForm onAdd={handleAddTransaction} />
-      <TransactionList
-        transactions={transactions}
-        onDeleteClick={handleDeleteClick}
-      />
+      <div className="form-and-list-con">
+        <TransactionForm onAdd={handleAddTransaction} />
+        <TransactionList
+          transactions={transactions}
+          onDeleteClick={handleDeleteClick}
+        />
+      </div>
       {isModalOpen && (
         <ConfirmModal
           onConfirm={handleConfirmDelete}
